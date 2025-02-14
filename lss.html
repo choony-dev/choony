@@ -1,1 +1,115 @@
-
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이순신 약력</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://images.unsplash.com/photo-1551740989-f0e47c488c20');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+        }
+        header {
+            background: rgba(0, 51, 102, 0.8);
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            background: rgba(255, 255, 255, 0.9);
+            color: #333;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            transition: transform 0.2s;
+            position: relative;
+        }
+        section:hover {
+            transform: translateY(-5px);
+        }
+        h2 {
+            color: #003366;
+            font-size: 2rem;
+        }
+        button {
+            background: #007bbf;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s, transform 0.3s;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        button:hover {
+            background: #005f8c;
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: rgba(0, 51, 102, 0.8);
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            section {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>이순신</h1>
+        <p>조선 시대의 위대한 장군</p>
+    </header>
+    <section>
+        <h2>약력</h2>
+        <p>
+            이순신(李舜臣, 1545년 4월 28일 ~ 1598년 12월 16일)은 조선 중기의 군인으로,
+            임진왜란 동안 조선 해군을 이끌며 일본군과의 수많은 해전에서 승리를 거두었습니다.
+            그는 병법과 해전 전략에 능하고, "거북선"이라는 철갑선으로 유명합니다.
+        </p>
+        <button onclick="showMore()">더 알아보기</button>
+        <div id="moreInfo" style="display:none; margin-top: 10px;">
+            <h3>주요 업적</h3>
+            <ul>
+                <li>한산도 대첩: 1592년, 일본 함대를 크게 무찌름</li>
+                <li>명량 해전: 1597년, 불리한 전투에서 기적적인 승리를 이끔</li>
+                <li>조선 해군력 강화: 해군 훈련 및 전략 개발에 기여</li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <p>© 2023 이순신 연구 | 모든 권리 보유</p>
+    </footer>
+    <script>
+        function showMore() {
+            var moreInfo = document.getElementById('moreInfo');
+            if (moreInfo.style.display === 'none') {
+                moreInfo.style.display = 'block';
+            } else {
+                moreInfo.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
