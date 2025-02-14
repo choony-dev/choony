@@ -1,6 +1,6 @@
 # [choony](https://choony-dev.github.io/choony)
 
-[https://hovinhthanh7893.github.io/portfolio](https://hovinhthanh7893.github.io/portfolio)
+[https://choony-dev.github.io/choony](https://choony-dev.github.io/choony)
 
 Updated February 2025
 
